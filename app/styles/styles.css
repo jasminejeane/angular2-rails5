@@ -1,0 +1,12 @@
+body {
+	background-color: #ece9e5;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.headline {
+	color: white;
+}
+
+ul.nav.nav-bar{
+	flex-direction: row;
+}
