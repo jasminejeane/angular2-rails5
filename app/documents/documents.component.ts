@@ -1,35 +1,36 @@
-import {Component} from '@angular/core';
-import {Document} from './document'
+import { Component } from '@angular/core';
+import { Document } from './document';
 
 @Component({
-  moduleId: module.id,
-  selector: 'documents',
-  templateUrl: 'documents.component.html'
+	moduleId: module.id,
+	selector: 'documents',
+	templateUrl: 'documents.component.html',
+	styleUrls: ['documents.component.css']
 })
 export class DocumentsComponent {
-  pageTitle: string = "Documents Dashboard";
-  documents : Document[] =[
-    {
-      title: "My first doc",
-      description: "vbzdfbnjfkzlbv;ksfpov;",
-      file_url: "http://google.com",
-      updated_at: '1/11/17',
-      image_url: "http://google.com",
-    },
-    {
-      title: "My second doc",
-      description: "vbzdfbnjfkzlbv;ksfpov;",
-      file_url: "http://google.com",
-      updated_at: '1/11/17',
-      image_url: "http://google.com",
-    },
-    {
-      title: "My third doc",
-      description: "vbzdfbnjfkzlbv;ksfpov;",
-      file_url: "http://google.com",
-      updated_at: '1/11/17',
-      image_url: "http://google.com",
-    }
-  ]
+	pageTitle: string = "Document Dashboard"
 
+	documents: Document[] = [
+		{
+			title: "My First Doc",
+			description: 'asdfasdfasdf asdfasd',
+			file_url: 'http://google.com',
+			updated_at: '11/11/16',
+			image_url: './app/assets/mustang.jpg',
+		},
+		{
+			title: "My Second Doc",
+			description: 'asdfasdfasdf asdfasd',
+			file_url: 'http://google.com',
+			updated_at: '11/11/16',
+			image_url: './app/assets/mustang.jpg',
+		},
+		{
+			title: "My Last Doc",
+			description: 'asdfasdfasdf asdfasd',
+			file_url: 'http://google.com',
+			updated_at: '11/11/16',
+			image_url: './app/assets/mustang.jpg',
+		}
+	]
 }
