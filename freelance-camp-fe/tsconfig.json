@@ -7,7 +7,10 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": [ "es2015", "dom" ],
-    "noImplicitAny": true,
+    "noImplicitAny": false,
+    /*changed to false bc it was causing an error .. changes per strategy lisited here
+    (https://github.com/angular/angular/issues/5917) I want find another fix but this will work
+    for now*/
     "suppressImplicitAnyIndexErrors": true
   }
 }
