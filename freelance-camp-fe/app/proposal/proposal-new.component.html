@@ -7,7 +7,7 @@
 			<div>
 				<form (ngSubmit)="createProposal(proposal)" #proposalForm="ngForm">
 					<div class="form-group">
-						<label for="customer">Clients Name</label>
+						<label for="customer">Client Name</label>
 						<input type="text"
 										class="form-control"
 										id="customer"
@@ -20,7 +20,7 @@
 						<div [hidden]="customer.valid || customer.pristine"
 									class='alert alert-danger'
 						>
-							Customer name is required
+							Client name is required
 						</div>
 					</div>
 
